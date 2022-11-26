@@ -6,13 +6,13 @@ public class Client {
         
             try{
                 String ip ="127.0.0.1";
-                final int PORT=122345;
+                final int PORT=12345;
 
                 Socket skt=new Socket(ip,PORT);
                 System.out.println("clinet is invocked....");
                 System.out.println("Port num"+skt.getPort());
                 System.out.println("Local port number="+skt.getLocalPort());
-                System.out.println("I am aditya");
+                System.out.println("Waiting for Client medium");
 
                 BufferedReader in =new BufferedReader(new InputStreamReader(skt.getInputStream()));
                 BufferedReader keyboard=new BufferedReader(new InputStreamReader(System.in));

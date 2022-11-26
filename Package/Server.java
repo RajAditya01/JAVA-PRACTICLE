@@ -5,13 +5,13 @@ public class Server {
     public static void main(String[] args) {
         
             try{
-                final int PORT=122345;
+                final int PORT=12345;
                 
                 ServerSocket sskt = new ServerSocket(PORT);
                 System.out.println("My Server Start Successfully");
                 System.out.println("Port num"+sskt.getLocalPort());
                 System.out.println("Waiting for client connetion...");
-                sskt.setSoTimeout(5000);
+                //sskt.setSoTimeout(5000);
                 Socket skt=sskt.accept();
 
                 System.out.println("Client is connected:"+skt);
